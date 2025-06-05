@@ -1,0 +1,122 @@
+/* Reset some default styles */
+body {
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;*/
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    overflow: hidden;
+    max-width: 600px;
+    min-width: 600px;
+}
+
+.image {
+    flex: 1 1 50%;
+    min-width: 0;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.content {
+    flex: 1 1 50%;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: hsl(228, 12%, 48%);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.content h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    margin: 0 0 1.2rem 0;
+    line-height: 1.1;
+}
+
+.content p {
+    color: hsl(228, 12%, 48%);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.current {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.discount {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.button {
+    width: 100%;
+}
+.button button {
+    width: 100%;
+    background: hsl(158, 36%, 37%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    
+}
+.button button:hover {
+    background: hsl(158, 36%, 20%);
+}
+.button img {
+    width: 18px;
+    height: 18px;
+}
+
+/* Responsive for mobile */
